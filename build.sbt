@@ -14,3 +14,7 @@ jlinkOptions ++= Seq(
   "--strip-debug",
   "--compress=2"
 )
+
+//SSL/TLS module - some module cannot be detected.
+jlinkModules += "jdk.crypto.ec"
+
